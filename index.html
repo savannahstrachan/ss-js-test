@@ -2,32 +2,116 @@
 <html>
 
 <head>
+
 	<title>Js Test Page</title>
+
+
 	<script type="text/javascript">
-		var amountraisedsofar = 1000;
-		
 
-		var newDonation = prompt("How Much Would You Like to Donate?");
-		
+/* var course ={ //creating object
 
-		amountraisedsofar = Number(newDonation) + amountraisedsofar;
+	name: "jscript applications",
+	day: "wed",
+	raining: false,
+	instructor: {
+				lastname: 'jones',
+				firstname: 'brian',
+				middlename: 'j',
+			},
+	campus: "loyola",
+
+	alist: [//creating array
+
+	{ //creating an index in an array
+		firstname: 'bill',
+		lastname: 'zack' // don't need comma here
+	},//closing first index in array
+
+	{
+		firstname: 'shane',
+		 lastname: 'williams'
+
+	}, //need comma here
+			],//closing array
+		}
+
+	
+	console.log(course.alist[0].firstname);// directly pulling up info
+
+course.alist.forEach( //listing all the things in the array
+	function(item, index)
+	{
+		console.log(item.lastname);
+	}
+	);
+ 	
+ 	course.campus="business school"; //can change name of whatever key with this command
+ 	console.log(course.campus);
+
+ 	course.instructor.favoritecolor= "red";// this auto-creates a variable in a tree-- can also delete with "delete.indexname.indexnumber etc etc"
+
+ 	console.log(course.instructor.favoritecolor);
+
+*/
+
+var course = {
+	name: 'Javascript Applications',
+	awesome: true,
+	teachers: ['Assaf', 'Shane'],
+	students: [
+				{ 
+					name: 'Steve',
+					computer: {
+							os: 'linux',
+							type: 'laptop'
+							}
+				},
+
+				{ 
+					name: 'Katy',
+					computer: {
+							os: 'osx',
+							type: 'macbook'
+							}
+				},
+				
+				{ 
+					name: 'Chuck',
+					computer: {
+							os: 'Windows',
+							type: 'desktop'
+							}
+				}
+				],
+			}
+	console.log(course.name);
+	console.log(course.teachers[1]);
+	console.log(course.students[0].name);
+	console.log(course.students[1].computer.type);
 
 
-		console.log("We have now raised: " + amountraisedsofar + "!");
+	var os = ['linux', 'osx', 'Windows'];
+
+	
+	console.log(os.join(' or '));
 
 
+
+	var OSXStudent = [course.students[1].name];
+
+	console.log(OSXStudent);
+	
+	
 
 	</script>
+
+
 
 </head>
 
 
-
-
-
-
-
 <body>
+
 
 
 
