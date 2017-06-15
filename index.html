@@ -90,14 +90,33 @@ var course = {
 	console.log(course.students[1].computer.type);
 
 
-	var os = ['linux', 'osx', 'Windows'];
 
+
+	var os = [];
+	var OSXStudent = [];
+
+	course.students.forEach( //listing all the things in the array
+	function(item, index)
+	{
+		os.push(item.computer.os);
+       
+       if(item.computer.os = "osx"){     
+			
+			OSXStudent.push(item.computer.os);
+         }
+
+	}
+	);
 	
 	console.log(os.join(' or '));
+	console.log(OSXStudent)
 
 
+	
 
-	var OSXStudent = [course.students[1].name];
+	
+
+
 
 	console.log(OSXStudent);
 	
