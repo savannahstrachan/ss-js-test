@@ -77,7 +77,6 @@ console.log(myouterfunction()); // this would not work with "y" because Y in is 
 
 
 
-
 // for (var i = 0; i < 10; i++) {
 
 //		var x = i;
